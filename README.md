@@ -10,7 +10,7 @@ The proposed system leverages advanced **Computer Vision** and **Machine Learnin
 ---
 
 ### 🏗️ Project Architecture & Flow
-![System Architecture](Archi.png) 
+![System Architecture](archi.png) 
 *Above: High-level workflow from video input to alarm activation.*
 
 ---
