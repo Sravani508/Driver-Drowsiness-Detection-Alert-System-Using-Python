@@ -1,4 +1,3 @@
-
 ### 📝 Proposed System
 The proposed system leverages advanced **Computer Vision** and **Machine Learning** to monitor driver alertness in real-time. By analyzing facial expressions, eye movements, and yawning patterns, the system provides a robust safety layer. 
 
@@ -6,34 +5,45 @@ The proposed system leverages advanced **Computer Vision** and **Machine Learnin
 *   **Face Detection:** Real-time video feed is processed using the **Haar-Cascade** algorithm for high-speed face detection.
 *   **Eye Monitoring:** Utilizes **Eye Aspect Ratio (EAR)** to calculate the precise openness of the eyes.
 *   **Yawn Detection:** Implements **Mouth Aspect Ratio (MAR)** to track lip distance and detect yawning.
-*   **Smart Alerts:** When the system detects prolonged eye closure or frequent yawning (falling below a specific threshold), it triggers an auditory warning to alert the driver.
+*   **Smart Alerts:** When the system detects prolonged eye closure or frequent yawning, it triggers an auditory warning.
+
+---
+
+### 🏗️ Project Architecture
+![System Architecture](architecture.jpg) 
+*Above: Flowchart showing the process from video input to alarm trigger.*
 
 ---
 
 ### ⚙️ Working Steps
 1.  **Environment Setup:** Integration of **OpenCV** for real-time image processing.
-2.  **Facial Landmark Mapping:** Applying algorithms to identify 68 key points on the face (eyes, mouth, nose).
-3.  **EAR Calculation:** Real-time mathematical computation of eye openness.
+2.  **Facial Landmark Mapping:** Identifying 68 key points on the face using Dlib.
+3.  **EAR Calculation:** Mathematical computation of eye openness.
 4.  **Fatigue Analysis:** Simultaneous monitoring of mouth movements for yawning.
-5.  **Drowsiness Validation:** If the EAR remains below the threshold for a pre-defined duration, the system confirms a state of drowsiness.
-6.  **Alert Mechanism:** Activation of a high-decibel auditory alert to regain the driver’s focus.
+5.  **Drowsiness Validation:** Triggering state if EAR/MAR thresholds are breached.
+6.  **Alert Mechanism:** Activation of a high-decibel auditory alert.
+
+---
+
+### 🖥️ Real-Time Detection Output
+![Detection Preview](output_sample.jpg)
+*Above: Real-time detection showing facial landmarks and eye state monitoring.*
 
 ---
 
 ### 🚀 How to Run
 
 1.  **Dependencies:**  
-    Install all necessary libraries using the command:  
+    Install all necessary libraries:  
     `pip install -r requirements.txt`
 
 2.  **Landmark Predictor:**  
-    Download the `shape_predictor_68_face_landmarks.dat` file and place it in the project root folder.
+    Download `shape_predictor_68_face_landmarks.dat` and place it in the root folder.
 
 3.  **Configuration:**  
-    In the `drowsiness_yawn.py` script, update the file path for your `alert.wav` file.
+    Update the `alert.wav` file path in `drowsiness_yawn.py`.
 
 4.  **Execution:**  
-    Run the main application using:  
     `python drowsiness_yawn.py`
 
 ---
