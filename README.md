@@ -20,7 +20,7 @@ STEP 6: Then an auditory alert will played to alert the driver to regain his foc
 <br>
 <b>CONTACT</b>
 <ul>
-<li><p>NAME: KATHIRVEL T</p></li>
-<li><p>PHONE: 9025610912</p></li>
-<li><p>E-MAIL: kathirvelthangaraju@gmail.com</p></li>
+<li><p>NAME: Sravani GT</p></li>
+<li><p>PHONE: 9247730471 </p></li>
+<li><p>E-MAIL: sravanigudditi10@gmail.com</p></li>
 </ul>
