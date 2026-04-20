@@ -11,7 +11,6 @@ The proposed system leverages advanced **Computer Vision** and **Machine Learnin
 
 ### 🏗️ Project Architecture
 ![System Architecture](architecture.jpg) 
-*Above: Flowchart showing the process from video input to alarm trigger.*
 
 ---
 
@@ -25,9 +24,8 @@ The proposed system leverages advanced **Computer Vision** and **Machine Learnin
 
 ---
 
-### 🖥️ Real-Time Detection Output
-![Detection Preview](output_sample.jpg)
-*Above: Real-time detection showing facial landmarks and eye state monitoring.*
+### 🖥️ Detection Framework
+![Detection Framework](framework.jpg)
 
 ---
 
